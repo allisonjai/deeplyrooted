@@ -28,11 +28,9 @@
                 <dc:creator><xsl:value-of select="mods:namePart"/></dc:creator>
             </xsl:for-each>
             <dc:contributor>George A. Smathers Libraries</dc:contributor>
-            <dc:publisher>
-                <xsl:for-each select="//mods:publisher">
-                    <xsl:value-of select="."/>
-                </xsl:for-each>
-            </dc:publisher>
+            <xsl:for-each select="//mods:publisher">
+                <dc:publisher><xsl:value-of select="."/></dc:publisher>
+            </xsl:for-each>
             <dc:coverage.temporal><xsl:value-of select="//mods:dateIssued"/></dc:coverage.temporal>
             <xsl:for-each select="//mods:hierarchicalGeographic">
                 <dc:coverage.spatial><xsl:value-of select="mods:state"/> -- <xsl:value-of select="mods:county"/> -- <xsl:value-of select="mods:city"/></dc:coverage.spatial>
