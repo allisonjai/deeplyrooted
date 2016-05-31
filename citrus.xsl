@@ -18,8 +18,8 @@
             <dc:relation>Deeply Rooted</dc:relation>
             <dc:identifier>http://ufdc.ufl.edu/<xsl:value-of select="//sobekcm:BibID"/></dc:identifier>
             <dc:title><xsl:value-of select="//mods:title"/></dc:title>
-            <xsl:for-each select="//mods:subject">
-                <dc:subject><xsl:value-of select="mods:topic"/></dc:subject>
+            <xsl:for-each select="//mods:topic">
+                <dc:subject><xsl:value-of select="."/></dc:subject>
             </xsl:for-each>
             <xsl:for-each select="//mods:note">
                 <dc:description><xsl:value-of select="."/></dc:description>
