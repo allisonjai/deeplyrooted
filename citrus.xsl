@@ -16,11 +16,14 @@
         <record>
             <dc:format>image/jpeg</dc:format>
             <dc:relation>Deeply Rooted</dc:relation>
+            <dc:relation>Jerry Chicone Jr. Florida Citrus Label Collection</dc:relation>
             <dc:identifier>http://ufdc.ufl.edu/<xsl:value-of select="//sobekcm:BibID"/></dc:identifier>
             <dc:title><xsl:value-of select="//mods:title"/></dc:title>
             <xsl:for-each select="//mods:topic">
                 <dc:subject><xsl:value-of select="."/></dc:subject>
             </xsl:for-each>
+            <dc:subject>Citrus crate labels</dc:subject>
+            <dc:subject>Commercial art</dc:subject>
             <xsl:for-each select="//mods:note">
                 <dc:description><xsl:value-of select="."/></dc:description>
             </xsl:for-each>
@@ -37,6 +40,7 @@
             </xsl:for-each>
             <dc:rights>The University of Florida George A. Smathers Libraries respect the intellectual property rights of others and do not claim any copyright interest in this item. This item may be protected by copyright but is made available here under a claim of fair use (17 U.S.C. §107) for non-profit research and educational purposes. Users of this work have responsibility for determining copyright status prior to reusing, publishing or reproducing this item for purposes other than what is allowed by fair use or other copyright exemptions. Any reuse of this item in excess of fair use or other copyright exemptions requires permission of the copyright holder. The Smathers Libraries would like to learn more about this item and invite individuals or organizations to contact Special and Area Studies Collections (special@uflib.ufl.edu) with any additional information they can provide. Due to the copyright status of the materials, high resolution copies of the materials may only be made available in limited circumstances.</dc:rights>
             <dc:date>2015</dc:date>
+            <dc:type>crate labels</dc:type>
         </record>
     </xsl:template> 
 </xsl:stylesheet>
